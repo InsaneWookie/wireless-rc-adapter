@@ -57,7 +57,7 @@
     #if CHANNELS == 6
       attachPinChangeInterrupt(digitalPinToPinChangeInterrupt(RC_PINS[5]), rcCh6Change, CHANGE);
     #else
-      #error It is not yet possible to use more than 6 channels in PWM_ mode!
+      //#error It is not yet possible to use more than 6 channels in PWM_ mode!
     #endif
   }
 

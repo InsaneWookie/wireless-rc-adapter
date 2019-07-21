@@ -168,7 +168,7 @@
                     keyb_flag = false;
                   }
                 #else
-                  Joystick.setButton(0, rc_values[i] < STICK_CENTER ? 0 : 1);
+                  Joystick.setButton(0, rc_values[i] < (STICK_CENTER + 250) ? 0 : 1);
                 #endif
                 break;
             }
@@ -247,7 +247,7 @@
                     keyb_flag = false;
                   }
                 #else
-                  Joystick.setButton(0, rc_values[i] < STICK_CENTER ? 0 : 1);
+                  Joystick.setButton(0, rc_values[i] < (STICK_CENTER + 250) ? 0 : 1);
                 #endif
                 break;
             }
